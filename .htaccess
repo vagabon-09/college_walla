@@ -1,0 +1,38 @@
+Options +FollowSymlinks
+RewriteEngine On 
+
+RewriteCond %{REQUEST_FILENAME}  !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+#Return 404 if orginal request is .php
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule .* -[L,R=404]
+
+
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^([^/]+)/?$ college.php?pid=$1 [L]
+
+
+
+# RewriteEngine On 
+# RewriteCond %{SCRIPT_FILENAME} !-d  
+# RewriteCond %{SCRIPT_FILENAME} !-f
+# RewriteRule ^([^/]+)/?$ query.php?qid=$1 [L]
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# for xml
+# RewriteEngine On
+
+# RewriteRule ^sitemap\.xml/?$ sitemap.php
+

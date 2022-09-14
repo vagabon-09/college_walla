@@ -1,0 +1,120 @@
+/* start singup success alert from here  */
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.alert {
+    width: 100%;
+    height: 52px;
+    color: white;
+    border-radius: 0px 15px 15px 15px;
+    margin: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0px 9px 2px -1px black; */
+    cursor: pointer;
+    font-size: 19px;
+    position: fixed;
+    z-index: 100;
+    float: top;
+    left: 0px;
+}
+
+#success {
+    width: 100%;
+    height: 52px;
+    background: rgb(12, 146, 57);
+    color: white;
+    border-radius: 0px 15px 15px 15px;
+    margin: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0px 9px 2px -1px black; */
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.left>p {
+    padding: 0px 20px 0px 20px;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.x:hover {
+    color: #39ff14;
+    animation: crose 5s linear 1;
+    transition: 0.5s;
+}
+
+@keyframes crose {
+    0% {
+        transform: rotate(20deg);
+    }
+    20% {
+        transform: rotate(50deg);
+    }
+    40% {
+        transform: rotate(750deg);
+    }
+    60% {
+        transform: rotate(950deg);
+    }
+    80% {
+        transform: rotate(150deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.right {
+    width: 68px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 780px) {
+    .left>p{
+      font-size: 10px;
+    }
+}
+
+/* ended sing-up success alert  */
+
+/* sing-up is not success is started from here  */
+
+#warning {
+    background: #f7b80d;
+}
+
+/* sing-up faild ended here    */
+
+.faild {
+    background: rgb(235, 9, 9) !important;
+}
+
+.no-content-alert{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.no-content-alert {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
