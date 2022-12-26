@@ -43,6 +43,9 @@ Mysqli
 - Queries discussion
 - Colleges Blog
 
+## Download MysQli 
+Import this in your MusQli 
+[Download](https://drive.google.com/file/d/1FAujNzuEAZiNkvnLVzEul6mCISdNbOEj/view?usp=sharing)
 
 
 ## Contributing
